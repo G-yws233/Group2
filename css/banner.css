@@ -1,0 +1,41 @@
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.banner ul {
+  list-style: none;
+}
+.banner ul:first-child {
+  width: 1000%;
+  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+}
+.banner ul:first-child li {
+  float: left;
+  width: 10%;
+}
+.banner ul:first-child li a {
+  display: block;
+  width: 100%;
+}
+.banner ul:first-child li a img {
+  display: block;
+  width: 100%;
+}
+.banner ul:last-child {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+.banner ul:last-child li {
+  float: left;
+  margin-left: 0.2rem;
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 50%;
+  background: #fff;
+}
+.banner ul:last-child li.active {
+  background: #fa0;
+}

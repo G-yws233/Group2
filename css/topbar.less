@@ -1,0 +1,54 @@
+@import "variables";
+header.wrapper {
+  width: 100%;
+  height: 90rem/@bs;
+  background: @maincolor;
+  position: relative;
+  a{
+    position: absolute;
+    display: block;
+    width: 90rem/@bs;
+    height: 90rem/@bs;
+    top: 0;
+    &:first-of-type {
+      left: 0;
+      background: url("../images/icon_category.png") center no-repeat/ 44rem/@bs 70rem/@bs;
+    }
+    &:last-of-type {
+      right: 0;
+      background: url("../images/icon_cart.png") center no-repeat/ 63rem/@bs 68rem/@bs;
+    }
+  }
+  form {
+    position: relative;
+    padding: 0 90rem/@bs;
+    width: 100%;
+    height: 90rem/@bs;
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    background: transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    span {
+      position: absolute;
+      display: block;
+      left:100rem/@bs;
+      top: 30rem/@bs;
+      width: 30rem/@bs;
+      height:30rem/@bs;
+      background: url("../images/icon_search.png") center no-repeat / 30rem/@bs 30rem/@bs ;
+    }
+    input {
+      margin-top: 15rem/@bs;
+      padding: 4rem/@bs 0 4rem/@bs 50rem/@bs;
+      width: 100%;
+      height: 60rem/@bs;
+      border: 0;
+      vertical-align: top;
+      background: rgba(255,255,255,.2);
+      font-size: 24rem/@bs;
+      -webkit-appearance: none;
+    }
+  }
+}

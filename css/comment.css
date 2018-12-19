@@ -1,0 +1,46 @@
+body,
+ul,
+li,
+p,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+::before,
+::after,
+input[type="search"] {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.body {
+  font-size: 12px;
+}
+.contentBox {
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+  opacity: 0;
+}
+.clearfix {
+  *zoom: 1;
+}

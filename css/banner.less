@@ -1,0 +1,42 @@
+@import "variables";
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  ul{
+    list-style: none;
+    &:first-child {
+      width: 1000%;
+      transform: translateX(-10%);
+      -webkit-transform: translateX(-10%);
+      li{
+        float: left;
+        width: 10%;
+        a{
+          display: block;
+          width: 100%;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &:last-child {
+      position: absolute;
+      bottom: 20rem/@bs;
+      right: 20rem/@bs;
+      li {
+        float: left;
+        margin-left: 20rem/@bs;
+        width: 15rem/@bs;
+        height: 15rem/@bs;
+        border-radius: 50%;
+        background: #fff;
+        &.active {
+          background: @maincolor;
+        }
+      }
+    }
+  }
+}
